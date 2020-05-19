@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1572955857 source:a:\program files\projects\list\main.cpp
+	<iostream>
+	<list>
+	<algorithm>
+	<stdio.h>
+
+1589810480 source:c:\users\user\desktop\Новая папка\list\main.cpp
+	<iostream>
+	<list>
+	<algorithm>
+	<stdio.h>
+	<string>
+
