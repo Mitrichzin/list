@@ -58,12 +58,9 @@ list<int> listwork( const char* input)
             case 2:
                 cout << "Введите значение вставляемого элемента: ";
                 cin >> v;
-                cout << "Введите позицию заданного элемента: ";
+                cout << "Введите значение заданного элемента: ";
                 cin >> x;
-                while (k != x - 1){
-                    it++;
-                    k++;
-                };
+                it=(find(l.begin(),l.end(),x));
                 if (it == l.end()) cout << "В списке нет элемента с такой позицией\n";
                 else
                     l.insert(it, v);
@@ -71,15 +68,15 @@ list<int> listwork( const char* input)
             case 3:
                 cout << "Введите значение вставляемого элемента: ";
                 cin >> v;
-                cout << "Введите позицию заданного элемента: ";
+                cout << "Введите значение заданного элемента: ";
                 cin >> x;
-                while (k != x){
-                    it++;
-                    k++;
-                };
+                it=(find(l.begin(),l.end(),x));
                 if (it == l.end()) cout << "В списке нет элемента с такой позицией\n";
                 else
-                    l.insert(it, v);
+                    {
+                        it++;
+                        l.insert(it, v);
+                    }
                 break;
             case 4:
                 cout << "Введите значение вставляемого элемента: ";
